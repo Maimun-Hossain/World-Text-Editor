@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Text Editor</title>
+    <link rel="shortcut icon" href="file-word-regular.svg" type="image/x-icon">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://kit.fontawesome.com/e3bfff1f9b.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+      <style>
+        .font{
+            font-family: 'Lilita One', cursive;
+        }
+      </style>
+</head>
+<body>
+    <div class="bg-blue-300 w-3/4 mx-auto mt-10 rounded-lg p-5 pb-20 px-60 shadow-2xl">
+        <h2 class="text-3xl font-light text-center text-black hover:text-white font mb-5">World Text Editor</h2>
+        <div class="grid grid-cols-3 border-t-2 border-x-2 px-5 bg-blue-200 border-black rounded-t-lg py-4">
+            <div class="flex justify-start gap-3">
+                <button id="bold-btn" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-bold"></i></button>
+                <button id="italic-btn" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-italic"></i></button>
+                <button id="under-btn" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-underline"></i></button>
+            </div>
+            <div class="flex justify-center gap-3">
+                <button id="align-start" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-align-left"></i></button>
+                <button id="align-center" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-align-center"></i></button>
+                <button id="align-end" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><i class="fa-solid fa-align-right"></i></button>
+            </div>
+            <div class="flex justify-end gap-3">
+                <input class="hover:bg-blue-500 w-1/6 h-2/3 mt-2 bg-blue-200 text-xl font-semibold pb-1 hover:border-black rounded-lg" type="number" name="" id="size-input" value="17">
+                <button id="upercase-btn" class="hover:bg-blue-500 px-4 py-2 hover:border-black rounded-lg"><span class="text-lg font-semibold">a</span><i class="fa-solid fa-a"></i></button>
+                <input class="cursor-pointer mt-2 mr-3 bg-blue-200 rounded-md hover:bg-blue-500 border-2 border-black" type="color" name="" id="text-color">
+            </div>
+        </div>
+        
+        <div class="border-black border-x-2 border-b-2 rounded-b-lg bg-blue-200">
+            <div class="border-t-2 border-black w-11/12 mx-auto mb-7"></div>
+            <div class="flex justify-center">
+                <textarea class=" p-5 w-11/12 mb-7 h-60 rounded-lg border-2 border-black" name="" id="input" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
